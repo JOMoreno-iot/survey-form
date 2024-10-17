@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>survey form</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form id="survey-form">
+            <fieldset>
+              <label id="name-label">Name<input id="name" type="text" placeholder="name" required/><label/>
+              <label id="email-label">Email<input id="email" type="email" placeholder="email" required/><label/>
+              <label id="number-label">Age<input id="number" type="number" min="13" max="120" placeholder="age" required/><label/>
+            </fieldset>
+            <fieldset>
+              <label for="dropdown">Which option best your current role?</label>
+                <select id="dropdown">
+                  <option value="student" type="radio">Student</option>
+                  <option value="job" type="radio">Full time job</option>
+                  <option value="learn" type="radio>Full time learn</option>
+                  <option value="no-say" type="radio">Prefer no say</option>
+                  <option value="other" type="radio">Other</option>
+                </select> 
+            </fieldset> 
+            <fieldset>
+              <label>Would you recommend freeCodeCamp to a friend?
+                <input type="radio" value="definitely" name="recommend">Definitely</input>
+                <input type="radio" value="maybe" name="recommend">Maybe</input>
+                <input type="radio" value="not-sure" name="recommend">Not sure</input>
+              </label>
+            </fieldset>
+            <fieldset>
+              <p>What your favorite feature of freeCodeCamp?<p>
+              <label>
+                <input id="favorite" value="front" type="checkbox" name="favorite">Front-end Proyect</input>
+              </label>
+              <label>
+                <input id="favorite" value="end" type="checkbox" name="favorite">Back-end Proyect</input>
+              </label>
+              <label>
+                <input id="favorite" value="data" type="checkbox" name="favorite">Data Visulization</input>
+              </label>
+              <label>
+                <input id="favorite" value="challenges" type="checkbox" name="favorite">Challenges</input>
+              </label>
+              <label>
+                <input id="favorite" value="open" type="checkbox" name="favorite">Open Source Community</input>
+              </label>
+              <label>
+                <input id="favorite" value="gitter" type="checkbox" name="favorite">Gitte help rooms</input>
+              </label>
+              <label>
+                <input id="favorite" value="videos" type="checkbox" name="favorite">Videos</input>
+              </label>
+              <label>
+                <input id="favorite" value="city" type="checkbox" name="favorite">City Meetups</input>
+              </label>
+              <label>
+                <input id="favorite" value="wiki" type="checkbox" name="favorite">Wiki</input>
+              </label>
+              <label>
+                <input id="favorite" value="forum" type="checkbox" name="favorite">Forum</input>
+              </label>
+              <label>
+                <input id="favorite" value="additional" type="checkbox" name="favorite">Additional Courses</input>
+              </label>
+            </fieldset> 
+           
+              <label for="comments"> Any comments or suggestions?>
+                 <textarea id="comments" name="comments" placeholder="Enter your comments here" rows="3" cols="31"></textarea>
+              </label>
+              <input id="submit" type="submit" 
+          </form>
+    </body>
+</html>
